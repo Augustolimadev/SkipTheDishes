@@ -9,20 +9,35 @@
 import Foundation
 import UIKit
 
-struct RestaurantModel: Codable {
+struct RestaurantModel {
     var restaurantId: Int
     var name: String
     var address: String
     var image: String
     
-    enum CodingKeys: String, CodingKey {
-        case restaurantId
-        case name
-        case address
-        case image
+    init(restaurantId: Int, name: String, address: String, image: String) {
+        self.restaurantId = restaurantId
+        self.name = name
+        self.address = address
+        self.image = image
+    }
+    
+    static func getModelSerialized(restaurants: Dictionary<String, [Dictionary<String, String>]>) -> [RestaurantModel] {
+        var restaurantList: [RestaurantModel] = []
+        
+        if let allRestaurant = restaurants["restaurants"] {
+            allRestaurant.forEach { (restaurant) in
+                restaurantList.append(RestaurantModel.init(restaurantId: Int(restaurant["restaurantId"]!)!,
+                                                           name: restaurant["name"]!,
+                                                           address: restaurant["address"]!,
+                                                           image: restaurant["image"]!))
+            }
+        }
+        
+        return restaurantList
     }
 }
 
-struct RestaurantModelWrapper: Codable {
-    var data: RestaurantModel?
-}
+//struct RestaurantModelWrapper: Codable {
+//    var data: RestaurantModel?
+//}

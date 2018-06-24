@@ -21,27 +21,16 @@ class RestaurantBusiness {
                     throw BusinessError.noElements
                 }
                 
-                guard let restaurantsModelWrapper = try? JSONDecoder().decode(RestaurantModelWrapper.self, from: resultData) else {
-                    throw BusinessError.parseJson(RestaurantModel.self)
+                guard let restaurantJSON = try JSONSerialization.jsonObject(with: resultData, options: []) as? Dictionary<String, [Dictionary<String, String>]> else {
+                    throw BusinessError.parseJson
                 }
                 
-                guard let restaurants = restaurantsModelWrapper.data else {
-                    throw BusinessError.noElements
-                }
+                let restaurants = RestaurantModel.getModelSerialized(restaurants: restaurantJSON)
                 
-//                if restaurants.count == 0 {
-//                    throw BusinessError.noElements
-//                } else {
-//                    callback { restaurants }
-//                }
-                
-                callback { [restaurants] }
+                callback { restaurants }
             } catch {
                 callback { throw error }
             }
         }
     }
 }
-
-
-

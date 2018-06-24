@@ -9,46 +9,142 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SkipTheDishes/Source/Business/RestaurantsBusiness.swift"
-            timestampString = "551550032.935769"
+            filePath = "SkipTheDishes/Source/ViewModel/RestaurantViewModel.swift"
+            timestampString = "551562478.062464"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "getRestaurantList(callback:)"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkipTheDishes/Source/ViewModel/RestaurantViewModel.swift"
+            timestampString = "551562478.0628099"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkipTheDishes/Source/Manager/RestaurantManager.swift"
+            timestampString = "551560009.486313"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "getRestaurantList(completionCallback:)"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (() throws -&gt; Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in SkipTheDishes.RestaurantBusiness.getRestaurantList(callback: (() throws -&gt; Swift.Array&lt;SkipTheDishes.RestaurantModel&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (() throws -&gt; Swift.Array&lt;SkipTheDishes.RestaurantModel&gt;) -&gt; () in SkipTheDishes.RestaurantManager.getRestaurantList(completionCallback: (() throws -&gt; Swift.Array&lt;SkipTheDishes.RestaurantModel&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "SkipTheDishes"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Augusto/Desktop/SkipTheDishes/SkipTheDishes/Source/Business/RestaurantsBusiness.swift"
-                  timestampString = "551551284.010705"
+                  urlString = "file:///Users/Augusto/Desktop/SkipTheDishes/SkipTheDishes/Source/Manager/RestaurantManager.swift"
+                  timestampString = "551562478.252792"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "1909">
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "215">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; Swift.Array&lt;SkipTheDishes.RestaurantModel&gt; in closure #1 (() throws -&gt; Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in SkipTheDishes.RestaurantBusiness.getRestaurantList(callback: (() throws -&gt; Swift.Array&lt;SkipTheDishes.RestaurantModel&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 () -&gt; Swift.Array&lt;SkipTheDishes.RestaurantModel&gt; in closure #1 (() throws -&gt; Swift.Array&lt;SkipTheDishes.RestaurantModel&gt;) -&gt; () in SkipTheDishes.RestaurantManager.getRestaurantList(completionCallback: (() throws -&gt; Swift.Array&lt;SkipTheDishes.RestaurantModel&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "SkipTheDishes"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Augusto/Desktop/SkipTheDishes/SkipTheDishes/Source/Business/RestaurantsBusiness.swift"
-                  timestampString = "551551284.020282"
+                  urlString = "file:///Users/Augusto/Desktop/SkipTheDishes/SkipTheDishes/Source/Manager/RestaurantManager.swift"
+                  timestampString = "551562478.255553"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
                   offsetFromSymbolStart = "12">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkipTheDishes/Source/Manager/RestaurantManager.swift"
+            timestampString = "551560009.486854"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "getRestaurantList(completionCallback:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (() throws -&gt; Swift.Array&lt;SkipTheDishes.RestaurantModel&gt;) -&gt; () in SkipTheDishes.RestaurantManager.getRestaurantList(completionCallback: (() throws -&gt; Swift.Array&lt;SkipTheDishes.RestaurantModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "SkipTheDishes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Augusto/Desktop/SkipTheDishes/SkipTheDishes/Source/Manager/RestaurantManager.swift"
+                  timestampString = "551562478.261829"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "367">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () throws -&gt; Swift.Array&lt;SkipTheDishes.RestaurantModel&gt; in closure #1 (() throws -&gt; Swift.Array&lt;SkipTheDishes.RestaurantModel&gt;) -&gt; () in SkipTheDishes.RestaurantManager.getRestaurantList(completionCallback: (() throws -&gt; Swift.Array&lt;SkipTheDishes.RestaurantModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "SkipTheDishes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Augusto/Desktop/SkipTheDishes/SkipTheDishes/Source/Manager/RestaurantManager.swift"
+                  timestampString = "551562478.2641439"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkipTheDishes/Source/Model/RestaurantModel.swift"
+            timestampString = "551562478.063202"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getModelSerialized(restaurants:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

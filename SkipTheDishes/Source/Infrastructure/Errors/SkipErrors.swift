@@ -9,7 +9,6 @@
 import Foundation
 
 enum BusinessError: Error {
-    case parse(String)
-    case parseJson(Decodable.Type)
+    case parseJson
     case noElements
 }

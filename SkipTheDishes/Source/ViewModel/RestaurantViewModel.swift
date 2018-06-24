@@ -15,7 +15,9 @@ class RestaurantViewModel: UIViewController {
         manager.getRestaurantList { (callback) in
             do {
                 let data = try callback()
+                print(data)
             } catch {
+                print("Deu ruim")
             }
         }
     }

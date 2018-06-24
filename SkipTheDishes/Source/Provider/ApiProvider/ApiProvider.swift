@@ -36,28 +36,12 @@ internal class ApiProvider {
         return instance
     }
     
-    // MARK: - Public Methods
     
-    /// Calls the backend client request
-    ///
-    /// - Parameters:
-    ///   - success: success call back
-    ///   - failure: failure call back
     func request(opKey op: ApiProvider.Operation,
                  completion: @escaping ApiCompletion) {
         
-        Alamofire.request(op.rawValue).response { (response) in
-            print(response)
+        Alamofire.request(URL(string: op.rawValue)!).responseData { (response) in
+            completion { response.result.value }
         }
-        
-//        Alamofire.request(op).response { response in // method defaults to `.get`
-//            debugPrint(response)
-//        }
-        
-//        backendClient.request(opKey: op.key, success: { (response) in
-//            completion { try self.handle(response) }
-//        }, failure: { (response) in
-//            completion { try self.handle(response) }
-//        })
     }
 }
