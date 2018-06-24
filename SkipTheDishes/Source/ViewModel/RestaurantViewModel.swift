@@ -9,6 +9,7 @@
 import UIKit
 
 let restaurantCell = "restaurantCell"
+let mapAddressSegue = "mapAddressSegue"
 
 class RestaurantViewModel: UIViewController, ViewCustomizable {
     typealias CustomView = RestaurantView
@@ -28,6 +29,11 @@ class RestaurantViewModel: UIViewController, ViewCustomizable {
         }
     }
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let mapView = segue.destination as! AddressMapViewModel
+//        mapView.setup(address: "")
+//    }
+    
 }
 
 extension RestaurantViewModel: UITableViewDataSource {
@@ -37,7 +43,7 @@ extension RestaurantViewModel: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let restaurant = restaurantList[indexPath.row]
-        var cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: restaurantCell)!
+        let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: restaurantCell)!
         cell.textLabel?.text = restaurant.name
         cell.detailTextLabel?.text = restaurant.address
 //        cell.imageView?.image = restaurant.name
@@ -45,4 +51,10 @@ extension RestaurantViewModel: UITableViewDataSource {
         return cell
     }
     
+}
+
+extension RestaurantViewModel: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: mapAddressSegue, sender: tableView.cellForRow(at: indexPath))
+    }
 }

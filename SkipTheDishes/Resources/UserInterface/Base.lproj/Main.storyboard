@@ -74,10 +74,45 @@
                             <outlet property="restaurantsTableView" destination="Opj-7T-zWc" id="Mkf-Ek-MZB"/>
                         </connections>
                     </view>
+                    <connections>
+                        <segue destination="eYx-AW-bea" kind="show" identifier="mapAddressSegue" id="mQQ-N0-Kn3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="173.59999999999999" y="62.518740629685162"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0TH-qb-0h4">
+            <objects>
+                <viewController id="eYx-AW-bea" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="epP-8E-0oP" customClass="AddressMapView" customModule="SkipTheDishes" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ndl-nf-E8H">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <outlet property="delegate" destination="eYx-AW-bea" id="1dX-de-Jv2"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ndl-nf-E8H" firstAttribute="top" secondItem="epP-8E-0oP" secondAttribute="top" id="SrX-mP-ksG"/>
+                            <constraint firstItem="ndl-nf-E8H" firstAttribute="leading" secondItem="2zz-XB-cx0" secondAttribute="leading" id="Ug4-PX-enx"/>
+                            <constraint firstItem="ndl-nf-E8H" firstAttribute="trailing" secondItem="2zz-XB-cx0" secondAttribute="trailing" id="ah0-S1-N7F"/>
+                            <constraint firstItem="ndl-nf-E8H" firstAttribute="bottom" secondItem="2zz-XB-cx0" secondAttribute="bottom" id="tVf-UM-kk7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2zz-XB-cx0"/>
+                        <connections>
+                            <outlet property="mapView" destination="ndl-nf-E8H" id="JaI-dl-DqO"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BlZ-WY-Pan" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.60000000000002" y="62.518740629685162"/>
         </scene>
     </scenes>
 </document>
