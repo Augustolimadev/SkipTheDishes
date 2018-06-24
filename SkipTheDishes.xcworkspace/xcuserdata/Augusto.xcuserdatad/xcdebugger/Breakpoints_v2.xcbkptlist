@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SkipTheDishes/Source/ViewModel/RestaurantViewModel.swift"
-            timestampString = "551562478.062464"
+            timestampString = "551562684.497298"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SkipTheDishes/Source/ViewModel/RestaurantViewModel.swift"
-            timestampString = "551562478.0628099"
+            timestampString = "551562684.497678"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -58,7 +58,7 @@
                   moduleName = "SkipTheDishes"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Augusto/Desktop/SkipTheDishes/SkipTheDishes/Source/Manager/RestaurantManager.swift"
-                  timestampString = "551562478.252792"
+                  timestampString = "551562684.789958"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
@@ -73,7 +73,7 @@
                   moduleName = "SkipTheDishes"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Augusto/Desktop/SkipTheDishes/SkipTheDishes/Source/Manager/RestaurantManager.swift"
-                  timestampString = "551562478.255553"
+                  timestampString = "551562684.794829"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
@@ -106,7 +106,7 @@
                   moduleName = "SkipTheDishes"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Augusto/Desktop/SkipTheDishes/SkipTheDishes/Source/Manager/RestaurantManager.swift"
-                  timestampString = "551562478.261829"
+                  timestampString = "551562684.80303"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"
@@ -121,7 +121,7 @@
                   moduleName = "SkipTheDishes"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Augusto/Desktop/SkipTheDishes/SkipTheDishes/Source/Manager/RestaurantManager.swift"
-                  timestampString = "551562478.2641439"
+                  timestampString = "551562684.8073291"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"
@@ -129,22 +129,6 @@
                   offsetFromSymbolStart = "12">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SkipTheDishes/Source/Model/RestaurantModel.swift"
-            timestampString = "551562478.063202"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "getModelSerialized(restaurants:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

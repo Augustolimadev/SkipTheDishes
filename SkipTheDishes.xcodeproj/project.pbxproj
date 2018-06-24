@@ -10,7 +10,6 @@
 		1427DDF720E0013D0012A1D4 /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427DDF620E0013D0012A1D4 /* RestaurantViewModel.swift */; };
 		1427DDF920E0034F0012A1D4 /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427DDF820E0034F0012A1D4 /* RestaurantView.swift */; };
 		149225C520DFCD120067CF03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149225C420DFCD120067CF03 /* AppDelegate.swift */; };
-		149225C720DFCD120067CF03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149225C620DFCD120067CF03 /* ViewController.swift */; };
 		149225CA20DFCD120067CF03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149225C820DFCD120067CF03 /* Main.storyboard */; };
 		149225CD20DFCD120067CF03 /* SkipTheDishes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 149225CB20DFCD120067CF03 /* SkipTheDishes.xcdatamodeld */; };
 		149225CF20DFCD130067CF03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 149225CE20DFCD130067CF03 /* Assets.xcassets */; };
@@ -51,7 +50,6 @@
 		1427DDF820E0034F0012A1D4 /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
 		149225C120DFCD120067CF03 /* SkipTheDishes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkipTheDishes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		149225C420DFCD120067CF03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		149225C620DFCD120067CF03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		149225C920DFCD120067CF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		149225CC20DFCD120067CF03 /* SkipTheDishes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkipTheDishes.xcdatamodel; sourceTree = "<group>"; };
 		149225CE20DFCD130067CF03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 				149225F620DFCD270067CF03 /* Resources */,
 				149225F520DFCD240067CF03 /* Source */,
 				149225C420DFCD120067CF03 /* AppDelegate.swift */,
-				149225C620DFCD120067CF03 /* ViewController.swift */,
 			);
 			path = SkipTheDishes;
 			sourceTree = "<group>";
@@ -462,7 +459,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1427DDF720E0013D0012A1D4 /* RestaurantViewModel.swift in Sources */,
-				149225C720DFCD120067CF03 /* ViewController.swift in Sources */,
 				1492260C20DFE5D40067CF03 /* RestaurantsProviderProtocol.swift in Sources */,
 				1496463C20DFECE20050E9D5 /* RestaurantModel.swift in Sources */,
 				149225CD20DFCD120067CF03 /* SkipTheDishes.xcdatamodeld in Sources */,

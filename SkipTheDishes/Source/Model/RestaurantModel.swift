@@ -37,7 +37,3 @@ struct RestaurantModel {
         return restaurantList
     }
 }
-
-//struct RestaurantModelWrapper: Codable {
-//    var data: RestaurantModel?
-//}
