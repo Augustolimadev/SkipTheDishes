@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1427DDF720E0013D0012A1D4 /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427DDF620E0013D0012A1D4 /* RestaurantViewModel.swift */; };
 		1427DDF920E0034F0012A1D4 /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427DDF820E0034F0012A1D4 /* RestaurantView.swift */; };
+		1427DDFD20E034460012A1D4 /* ViewCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427DDFC20E034460012A1D4 /* ViewCustomizable.swift */; };
 		149225C520DFCD120067CF03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149225C420DFCD120067CF03 /* AppDelegate.swift */; };
 		149225CA20DFCD120067CF03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149225C820DFCD120067CF03 /* Main.storyboard */; };
 		149225CD20DFCD120067CF03 /* SkipTheDishes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 149225CB20DFCD120067CF03 /* SkipTheDishes.xcdatamodeld */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		1427DDF620E0013D0012A1D4 /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
 		1427DDF820E0034F0012A1D4 /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
+		1427DDFC20E034460012A1D4 /* ViewCustomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCustomizable.swift; sourceTree = "<group>"; };
 		149225C120DFCD120067CF03 /* SkipTheDishes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkipTheDishes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		149225C420DFCD120067CF03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		149225C920DFCD120067CF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,6 +102,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1427DDFA20E033F90012A1D4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1427DDFB20E034290012A1D4 /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1427DDFB20E034290012A1D4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1427DDFC20E034460012A1D4 /* ViewCustomizable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		149225B820DFCD120067CF03 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +171,7 @@
 		149225F520DFCD240067CF03 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				1427DDFA20E033F90012A1D4 /* Common */,
 				149225FB20DFCE380067CF03 /* View */,
 				149225FA20DFCE340067CF03 /* ViewModel */,
 				149225FC20DFCE430067CF03 /* Model */,
@@ -468,6 +487,7 @@
 				1492260A20DFE5710067CF03 /* RestaurantsProvider.swift in Sources */,
 				1492260520DFDD5D0067CF03 /* RestaurantsBusiness.swift in Sources */,
 				149225C520DFCD120067CF03 /* AppDelegate.swift in Sources */,
+				1427DDFD20E034460012A1D4 /* ViewCustomizable.swift in Sources */,
 				1427DDF920E0034F0012A1D4 /* RestaurantView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

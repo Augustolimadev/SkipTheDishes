@@ -10,4 +10,5 @@ import UIKit
 
 class RestaurantView: UIView {
     
+    @IBOutlet var restaurantsTableView: UITableView!
 }

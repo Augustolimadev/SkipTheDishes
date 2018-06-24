@@ -8,18 +8,41 @@
 
 import UIKit
 
-class RestaurantViewModel: UIViewController {
+let restaurantCell = "restaurantCell"
+
+class RestaurantViewModel: UIViewController, ViewCustomizable {
+    typealias CustomView = RestaurantView
+    
     private lazy var manager = RestaurantManager()
+    var restaurantList: [RestaurantModel] = []
     
     override func viewDidLoad() {
         manager.getRestaurantList { (callback) in
             do {
                 let data = try callback()
-                print(data)
+                self.restaurantList = data
+                self.customView.restaurantsTableView.reloadData()
             } catch {
-                print("Deu ruim")
+                print("I will finish if have time :)")
             }
         }
+    }
+    
+}
+
+extension RestaurantViewModel: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return restaurantList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let restaurant = restaurantList[indexPath.row]
+        var cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: restaurantCell)!
+        cell.textLabel?.text = restaurant.name
+        cell.detailTextLabel?.text = restaurant.address
+//        cell.imageView?.image = restaurant.name
+        
+        return cell
     }
     
 }
