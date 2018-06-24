@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1427DDF720E0013D0012A1D4 /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427DDF620E0013D0012A1D4 /* RestaurantViewModel.swift */; };
+		1427DDF920E0034F0012A1D4 /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427DDF820E0034F0012A1D4 /* RestaurantView.swift */; };
 		149225C520DFCD120067CF03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149225C420DFCD120067CF03 /* AppDelegate.swift */; };
 		149225C720DFCD120067CF03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149225C620DFCD120067CF03 /* ViewController.swift */; };
 		149225CA20DFCD120067CF03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149225C820DFCD120067CF03 /* Main.storyboard */; };
@@ -15,6 +17,16 @@
 		149225D220DFCD130067CF03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149225D020DFCD130067CF03 /* LaunchScreen.storyboard */; };
 		149225DD20DFCD130067CF03 /* SkipTheDishesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149225DC20DFCD130067CF03 /* SkipTheDishesTests.swift */; };
 		149225E820DFCD130067CF03 /* SkipTheDishesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149225E720DFCD130067CF03 /* SkipTheDishesUITests.swift */; };
+		149225FF20DFDB5F0067CF03 /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = 149225FE20DFDB5F0067CF03 /* restaurants.json */; };
+		1492260520DFDD5D0067CF03 /* RestaurantsBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1492260420DFDD5D0067CF03 /* RestaurantsBusiness.swift */; };
+		1492260820DFE4800067CF03 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1492260720DFE4800067CF03 /* ApiProvider.swift */; };
+		1492260A20DFE5710067CF03 /* RestaurantsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1492260920DFE5710067CF03 /* RestaurantsProvider.swift */; };
+		1492260C20DFE5D40067CF03 /* RestaurantsProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1492260B20DFE5D40067CF03 /* RestaurantsProviderProtocol.swift */; };
+		1496463C20DFECE20050E9D5 /* RestaurantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496463B20DFECE20050E9D5 /* RestaurantModel.swift */; };
+		1496463F20DFFA1E0050E9D5 /* SkipErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496463E20DFFA1E0050E9D5 /* SkipErrors.swift */; };
+		1496464320DFFCCF0050E9D5 /* RestaurantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496464220DFFCCF0050E9D5 /* RestaurantManager.swift */; };
+		14AFE61B20DFFEB10010D69E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14AFE61A20DFFEB10010D69E /* Info.plist */; };
+		CEF374822148FAA0CBE47748 /* Pods_SkipTheDishes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E922EC211A6FC5A9DB7B9EEA /* Pods_SkipTheDishes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1427DDF620E0013D0012A1D4 /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
+		1427DDF820E0034F0012A1D4 /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
 		149225C120DFCD120067CF03 /* SkipTheDishes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkipTheDishes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		149225C420DFCD120067CF03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		149225C620DFCD120067CF03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,13 +56,24 @@
 		149225CC20DFCD120067CF03 /* SkipTheDishes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkipTheDishes.xcdatamodel; sourceTree = "<group>"; };
 		149225CE20DFCD130067CF03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		149225D120DFCD130067CF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		149225D320DFCD130067CF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		149225D820DFCD130067CF03 /* SkipTheDishesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkipTheDishesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		149225DC20DFCD130067CF03 /* SkipTheDishesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipTheDishesTests.swift; sourceTree = "<group>"; };
 		149225DE20DFCD130067CF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		149225E320DFCD130067CF03 /* SkipTheDishesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkipTheDishesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		149225E720DFCD130067CF03 /* SkipTheDishesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipTheDishesUITests.swift; sourceTree = "<group>"; };
 		149225E920DFCD130067CF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		149225FE20DFDB5F0067CF03 /* restaurants.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
+		1492260420DFDD5D0067CF03 /* RestaurantsBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsBusiness.swift; sourceTree = "<group>"; };
+		1492260720DFE4800067CF03 /* ApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
+		1492260920DFE5710067CF03 /* RestaurantsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsProvider.swift; sourceTree = "<group>"; };
+		1492260B20DFE5D40067CF03 /* RestaurantsProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsProviderProtocol.swift; sourceTree = "<group>"; };
+		1496463B20DFECE20050E9D5 /* RestaurantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantModel.swift; sourceTree = "<group>"; };
+		1496463E20DFFA1E0050E9D5 /* SkipErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipErrors.swift; sourceTree = "<group>"; };
+		1496464220DFFCCF0050E9D5 /* RestaurantManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantManager.swift; sourceTree = "<group>"; };
+		14AFE61A20DFFEB10010D69E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		737337CFC748B4165D07ABFF /* Pods-SkipTheDishes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkipTheDishes.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkipTheDishes/Pods-SkipTheDishes.release.xcconfig"; sourceTree = "<group>"; };
+		8FCDBA717603023A0A008987 /* Pods-SkipTheDishes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkipTheDishes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkipTheDishes/Pods-SkipTheDishes.debug.xcconfig"; sourceTree = "<group>"; };
+		E922EC211A6FC5A9DB7B9EEA /* Pods_SkipTheDishes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkipTheDishes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF374822148FAA0CBE47748 /* Pods_SkipTheDishes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +109,8 @@
 				149225DB20DFCD130067CF03 /* SkipTheDishesTests */,
 				149225E620DFCD130067CF03 /* SkipTheDishesUITests */,
 				149225C220DFCD120067CF03 /* Products */,
+				B97CCD98DB20F1FB3B0F2C29 /* Pods */,
+				A3547F995FF64B95DDE520A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +127,10 @@
 		149225C320DFCD120067CF03 /* SkipTheDishes */ = {
 			isa = PBXGroup;
 			children = (
+				149225F620DFCD270067CF03 /* Resources */,
+				149225F520DFCD240067CF03 /* Source */,
 				149225C420DFCD120067CF03 /* AppDelegate.swift */,
 				149225C620DFCD120067CF03 /* ViewController.swift */,
-				149225C820DFCD120067CF03 /* Main.storyboard */,
-				149225CE20DFCD130067CF03 /* Assets.xcassets */,
-				149225D020DFCD130067CF03 /* LaunchScreen.storyboard */,
-				149225D320DFCD130067CF03 /* Info.plist */,
-				149225CB20DFCD120067CF03 /* SkipTheDishes.xcdatamodeld */,
 			);
 			path = SkipTheDishes;
 			sourceTree = "<group>";
@@ -128,6 +153,140 @@
 			path = SkipTheDishesUITests;
 			sourceTree = "<group>";
 		};
+		149225F520DFCD240067CF03 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				149225FB20DFCE380067CF03 /* View */,
+				149225FA20DFCE340067CF03 /* ViewModel */,
+				149225FC20DFCE430067CF03 /* Model */,
+				1496464020DFFC690050E9D5 /* Manager */,
+				1492260320DFDD370067CF03 /* Business */,
+				149225FD20DFDA750067CF03 /* Provider */,
+				149225F720DFCDAA0067CF03 /* Infrastructure */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		149225F620DFCD270067CF03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				149225F820DFCDDA0067CF03 /* UserInterface */,
+				149225F920DFCDE80067CF03 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		149225F720DFCDAA0067CF03 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				14AFE61A20DFFEB10010D69E /* Info.plist */,
+				1496463D20DFF9E10050E9D5 /* Errors */,
+				149225CB20DFCD120067CF03 /* SkipTheDishes.xcdatamodeld */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		149225F820DFCDDA0067CF03 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				149225C820DFCD120067CF03 /* Main.storyboard */,
+				149225D020DFCD130067CF03 /* LaunchScreen.storyboard */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		149225F920DFCDE80067CF03 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				149225CE20DFCD130067CF03 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		149225FA20DFCE340067CF03 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1427DDF620E0013D0012A1D4 /* RestaurantViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		149225FB20DFCE380067CF03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1427DDF820E0034F0012A1D4 /* RestaurantView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		149225FC20DFCE430067CF03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1496463B20DFECE20050E9D5 /* RestaurantModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		149225FD20DFDA750067CF03 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				1492260620DFE45F0067CF03 /* ApiProvider */,
+				149225FE20DFDB5F0067CF03 /* restaurants.json */,
+				1492260920DFE5710067CF03 /* RestaurantsProvider.swift */,
+				1492260B20DFE5D40067CF03 /* RestaurantsProviderProtocol.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		1492260320DFDD370067CF03 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				1492260420DFDD5D0067CF03 /* RestaurantsBusiness.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		1492260620DFE45F0067CF03 /* ApiProvider */ = {
+			isa = PBXGroup;
+			children = (
+				1492260720DFE4800067CF03 /* ApiProvider.swift */,
+			);
+			path = ApiProvider;
+			sourceTree = "<group>";
+		};
+		1496463D20DFF9E10050E9D5 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				1496463E20DFFA1E0050E9D5 /* SkipErrors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		1496464020DFFC690050E9D5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1496464220DFFCCF0050E9D5 /* RestaurantManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A3547F995FF64B95DDE520A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E922EC211A6FC5A9DB7B9EEA /* Pods_SkipTheDishes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B97CCD98DB20F1FB3B0F2C29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FCDBA717603023A0A008987 /* Pods-SkipTheDishes.debug.xcconfig */,
+				737337CFC748B4165D07ABFF /* Pods-SkipTheDishes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +294,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 149225EC20DFCD130067CF03 /* Build configuration list for PBXNativeTarget "SkipTheDishes" */;
 			buildPhases = (
+				CA143415484436E9F152F940 /* [CP] Check Pods Manifest.lock */,
 				149225BD20DFCD120067CF03 /* Sources */,
 				149225BE20DFCD120067CF03 /* Frameworks */,
 				149225BF20DFCD120067CF03 /* Resources */,
+				402EB91B10DE0A0C417026ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,8 +393,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				149225FF20DFDB5F0067CF03 /* restaurants.json in Resources */,
 				149225D220DFCD130067CF03 /* LaunchScreen.storyboard in Resources */,
 				149225CF20DFCD130067CF03 /* Assets.xcassets in Resources */,
+				14AFE61B20DFFEB10010D69E /* Info.plist in Resources */,
 				149225CA20DFCD120067CF03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +417,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		402EB91B10DE0A0C417026ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SkipTheDishes/Pods-SkipTheDishes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkipTheDishes/Pods-SkipTheDishes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA143415484436E9F152F940 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkipTheDishes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		149225BD20DFCD120067CF03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1427DDF720E0013D0012A1D4 /* RestaurantViewModel.swift in Sources */,
 				149225C720DFCD120067CF03 /* ViewController.swift in Sources */,
+				1492260C20DFE5D40067CF03 /* RestaurantsProviderProtocol.swift in Sources */,
+				1496463C20DFECE20050E9D5 /* RestaurantModel.swift in Sources */,
 				149225CD20DFCD120067CF03 /* SkipTheDishes.xcdatamodeld in Sources */,
+				1496463F20DFFA1E0050E9D5 /* SkipErrors.swift in Sources */,
+				1492260820DFE4800067CF03 /* ApiProvider.swift in Sources */,
+				1496464320DFFCCF0050E9D5 /* RestaurantManager.swift in Sources */,
+				1492260A20DFE5710067CF03 /* RestaurantsProvider.swift in Sources */,
+				1492260520DFDD5D0067CF03 /* RestaurantsBusiness.swift in Sources */,
 				149225C520DFCD120067CF03 /* AppDelegate.swift in Sources */,
+				1427DDF920E0034F0012A1D4 /* RestaurantView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,11 +643,12 @@
 		};
 		149225ED20DFCD130067CF03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FCDBA717603023A0A008987 /* Pods-SkipTheDishes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HP369PCVTE;
-				INFOPLIST_FILE = SkipTheDishes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SkipTheDishes/Source/Infrastructure/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +662,12 @@
 		};
 		149225EE20DFCD130067CF03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 737337CFC748B4165D07ABFF /* Pods-SkipTheDishes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HP369PCVTE;
-				INFOPLIST_FILE = SkipTheDishes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SkipTheDishes/Source/Infrastructure/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
